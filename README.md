@@ -1,44 +1,25 @@
-# ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
-**PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
+# Ethereum Smart Contract, Tokens, and Dapp 
 
-### ToDo
-This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
-
-
-
+**PROJECT: Decentralized Star Notary Service Project** - For this project, I created a star notary DApp complete with a smart contract and deployed to the public testnet, Rinkeby.
 ### Dependencies
-For this project, you will need to have:
-1. **Node and NPM** installed - NPM is distributed with [Node.js](https://www.npmjs.com/get-npm)
+
+1. **Truffle**
+
+For this project, the following truffle version was used:
 ```bash
-# Check Node version
-node -v
-# Check NPM version
-npm -v
+Truffle v5.3.7 (core: 5.3.7)
+Solidity - 0.5.16 (solc-js)
+Node v16.0.0
+Web3.js v1.3.6
 ```
 
+2. **Metamask: 9.5.4**
 
-2. **Truffle v5.X.X** - A development framework for Ethereum. 
+Used for connecting to Rinkeby testnet.
+
+3. **Other mandatory packages**:
+
 ```bash
-# Unsinstall any previous version
-npm uninstall -g truffle
-# Install
-npm install -g truffle
-# Specify a particular version
-npm install -g truffle@5.0.2
-# Verify the version
-truffle version
-```
-
-
-2. **Metamask: 5.3.1** - If you need to update Metamask just delete your Metamask extension and install it again.
-
-
-3. [Ganache](https://www.trufflesuite.com/ganache) - Make sure that your Ganache and Truffle configuration file have the same port.
-
-
-4. **Other mandatory packages**:
-```bash
-cd app
 # install packages
 npm install --save  openzeppelin-solidity@2.3
 npm install --save  truffle-hdwallet-provider@1.0.17
@@ -46,8 +27,7 @@ npm install webpack-dev-server -g
 npm install web3
 ```
 
-
-### Run the application
+### Running the application
 1. Clean the frontend 
 ```bash
 cd app
@@ -100,39 +80,3 @@ The chain ID above can be fetched by:
 cd app
 node index.js
 ```
-
-## Troubleshoot
-#### Error 1 
-```
-'webpack-dev-server' is not recognized as an internal or external command
-```
-**Solution:**
-- Delete the node_modules folder, the one within the /app folder
-- Execute `npm install` command from the /app folder
-
-After a long install, everything will work just fine!
-
-
-#### Error 2
-```
-ParserError: Source file requires different compiler version. 
-Error: Truffle is currently using solc 0.5.16, but one or more of your contracts specify "pragma solidity >=0.X.X <0.X.X".
-```
-**Solution:** In such a case, ensure the following in `truffle-config.js`:
-```js
-// Configure your compilers  
-compilers: {    
-  solc: {      
-    version: "0.5.16", // <- Use this        
-    // docker: true,
-    // ...
-```
-
-## Raise a PR or report an Issue
-1. Feel free to raise a [Pull Request](https://github.com/udacity/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code/pulls) if you find a bug/scope of improvement in the current repository. 
-
-2. If you have suggestions or facing issues, you can log in issue. 
-
----
-
-Do not use the [Old depreacted zipped starter code](https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c51c4c0_project-5-starter-code/project-5-starter-code.zip)
