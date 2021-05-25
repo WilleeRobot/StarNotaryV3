@@ -1,6 +1,6 @@
 # Ethereum Smart Contract, Tokens, and Dapp 
 
-**PROJECT: Decentralized Star Notary Service Project** - For this project, I created a star notary DApp complete with a smart contract and deployed to the public testnet, Rinkeby.
+**PROJECT: Decentralized Star Notary Service Project** - This is a star notary DApp complete with a smart contract and deployed to the public testnet, Rinkeby.
 
 ### Token Particulars (ERC-721):
 
