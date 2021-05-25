@@ -1,23 +1,34 @@
 # Ethereum Smart Contract, Tokens, and Dapp 
 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, I created a star notary DApp complete with a smart contract and deployed to the public testnet, Rinkeby.
-### Dependencies
 
-1. **Truffle**
+### Token Particulars (ERC-721):
+
+**Token Name** - Starburst
+
+**Token Symbol** - STR
+
+### Particular Package Versions Used
+
+**Truffle Version**
 
 For this project, the following truffle version was used:
+
 ```bash
+
 Truffle v5.3.7 (core: 5.3.7)
 Solidity - 0.5.16 (solc-js)
 Node v16.0.0
 Web3.js v1.3.6
 ```
 
-2. **Metamask: 9.5.4**
+**OpenZeppelin v2.3.0** - for writing smart contract for this particular project.
 
-Used for connecting to Rinkeby testnet.
+**Metamask: 9.5.4** - for connecting to Rinkeby testnet.
 
-3. **Other mandatory packages**:
+### Dependencies
+
+**Other mandatory packages**:
 
 ```bash
 # install packages
